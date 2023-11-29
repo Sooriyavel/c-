@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main() {
+    int num1, num2;
+  cout<<"enter the two number :";
+  cin>>num1>>num2;
+if(num1==num2)
+     cout<<"the given number is equal";
+else 
+      cout<<"the given number is not equal";
+    return 0;
+}
