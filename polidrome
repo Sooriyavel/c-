@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int num,sum=0,rem,num1;
+  
+  cout<<"enter the number: \n";
+  cin>>num;
+  num1=num;
+  while(num!=0){
+    
+    rem=num%10;
+    sum=(sum*10)+rem;
+    num/=10;
+  }
+  if(num1==sum)
+        cout<<"its is palidrome";
+  else
+    cout<<"its is not palidrome";
+  
+  return 0;
+}
