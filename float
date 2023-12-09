@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+  
+  float a,b;
+  cout<<"enter the two number:\n ";
+  cin>>a>>b;
+  
+  cout<<"the addition of two number:"<<a+b;
+  cout<<"\nthe subtraction of two number:"<<a-b;
+  cout<<"\nthe multiplication of two number:"<<a*b;
+  cout<<"\nthe division of two number:"<<a/b;
+  
+  
+  return 0;
+}
