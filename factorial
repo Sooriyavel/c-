@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+  
+  int num,i,fact=1;
+  
+  cout<<"enter the factorial number: \n";
+  cin>>num;
+  
+  for(i=1;i<=num;i++)
+  {
+    fact=fact*i;
+  }
+  
+  cout<<"the factorial of "<<num<<" is : "<<fact;
+  return 0;
+}
