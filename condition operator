@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+  
+  int a,b,c,ans;
+  
+  cout<<"enter the number :\n";
+  cin>>a>>b>>c;
+  
+  ans=(a>b)?a>c?a:c:b>c?b:c;
+  cout<<"the largest number is: "<<ans;
+  
+   return 0;
+}
