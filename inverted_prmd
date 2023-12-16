@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+void printInvTriangle(int n)
+{
+
+	int i = 0;
+	int j;
+
+	while (i < n) {
+
+		int space = i;
+		j = 0;
+
+		while (j < 2 * n - i - 1) {
+
+			if (space) {
+				cout << " ";
+				space--;
+			}
+			else {
+				cout << "* ";
+			}
+			j++;
+		}
+		cout << endl;
+		i++;
+	}
+}
+
+int main()
+{
+	printInvTriangle(5);
+
+	return 0;
+}
