@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+bool buzzz(int x){
+   
+  return (x%10==7||x%7==0);
+
+}
+
+int main(){
+  
+  int num,num1;
+  cout<<"enter the two number: \n";
+  cin>>num>>num1;
+
+  if(buzzz(num))
+    cout<<"the buzz number is: "<<num<<"\n";
+  else 
+    cout<<num <<"is not a buzz number ";
+    if(buzzz(num1))
+    cout<<"the buzz number is: "<<num1;
+  else
+    cout<<num1<<"is not a buzz number ";
+  return 0;
+}
