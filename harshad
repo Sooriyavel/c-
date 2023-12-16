@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main(){
+  
+  int i,sum=0,dgt,rem,num1,num;
+
+  cout<<"enter the digit \n";
+  cin>>dgt;
+  cout<<"enter the number: \n";
+  cin>>num;
+  num1=num;
+  
+   for(i=0;i>dgt;i++){
+     rem=num1%10;
+     sum+=rem;
+     num1=num/10;
+   }
+  
+  if(sum%num==0){
+  cout<<"the given number is harshad number";
+  }
+  else{
+    cout<<"the given number is not harshad number";
+  }
+  
+  return 0;
+}
