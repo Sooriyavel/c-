@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main(){
+  
+  int num,digt,sum=0,rem,num1;
+  cout<<"enter the number: \n";
+  cin>>num;
+  num1=num;
+  
+  while(num!=0){
+    
+    rem=num%10;
+    sum+=rem*rem*rem;
+    num/=10;
+    
+  }
+  
+  if(num1==sum)
+    cout<<"its narcissistic number ";
+  else 
+    cout<<"its is not narcissistic number ";
+  
+  return 0;
+}
