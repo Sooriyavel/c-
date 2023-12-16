@@ -1,0 +1,20 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+  
+  float a,b;
+  a=2.9;
+  b=-1.5;
+  
+  cout<<"A= "<<a<<"\nB= "<<b;
+  
+  cout<<"\nfloor(A,B)=  "<<floor(a)<<" , ";//2
+  cout<<floor(b)<<endl;//-1
+  cout<<"ceil(A,B)=  "<<ceil(a)<<" , ";//3
+  cout<<ceil(b);//-0
+  
+  
+  
+  return 0;
+}
