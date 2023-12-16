@@ -1,0 +1,28 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int occur(int ary[],int size,int value){
+  
+    int count=0;
+  for(int i=0;i<size;i++){
+     if(ary[i]==value){
+          count++;
+     }
+  }
+  return count;
+}
+
+int main(){
+
+  
+  int ary[]={3,5,6,9,1,2,3,4,5,6};
+  int size=sizeof(ary)/sizeof(ary[0]);
+    
+  for(int i=0;i<size;i++){
+  int occurrences= occur(ary,size,ary[i]);
+    cout<<"the occurrences of "<<ary[i]<<" is : "<<occurrences<<endl;
+  }
+  
+  return 0;
+}
