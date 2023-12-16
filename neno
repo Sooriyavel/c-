@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+  
+  int num,sum=0,rem,sq;
+  cout<<"enter the number check wether is neno number or not: \n";
+  cin>>num;
+  
+  sq=num*num;
+  
+  while(sq!=0){
+    rem=sq%10;
+    sum+=rem;
+    sq/=10;
+  }
+  
+  if(num==sum)
+    cout<<"the number is neno number";
+  else 
+    cout<<"the number is not neno number";
+  
+  return 0;
+}
